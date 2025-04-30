@@ -48,7 +48,7 @@ def extract_answer(text):
         (r"<start_latex>(.*?)</end_latex>", re.DOTALL),
         (r"<start_latex>(.*?)<end_latex>", re.DOTALL),
         (r"\\\[(.*?)\\\]", re.DOTALL),
-        (r"\\begin\{[^}]*\}(.*?)\\end\{[^}]*\}", re.DOTALL),
+        # (r"\\begin\{[^}]*\}(.*?)\\end\{[^}]*\}", re.DOTALL),
         (r"```latex\s*\n?(.*?)\n?```", re.DOTALL),
     ]
 
