@@ -26,6 +26,11 @@
           <h3>Rendered LaTeX</h3>
           <div v-html="renderedHtml" class="math"></div>
         </div>
+        <div class="rendered">
+          <h3>Eval Score</h3>
+          <!-- <div v-html="renderedHtml" class="math"></div> -->
+          <p>TODO...</p>
+        </div>
       </div>
     </div>
   </div>
