@@ -7,7 +7,6 @@ Start command:
 ```bash
 cd hocr-vue-client/
 
-npm init -y
 npm install
 npm run dev
 ```

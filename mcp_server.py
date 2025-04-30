@@ -31,7 +31,7 @@ client = OpenAI(
     api_key=<OPENROUTER_API_KEY>,
 )
 
-vision_model_name = "qwen/qwen2.5-vl-32b-instruct:free"
+vision_model_name = "qwen/qwen2.5-vl-72b-instruct:free"
 
 # set up FastMCPServer
 mcp = FastMCP()
