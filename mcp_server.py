@@ -28,7 +28,7 @@ logger.addHandler(file_handler)
 # set up OpenAI API
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key=<OPENROUTER_API_KEY>,
 )
 
 vision_model_name = "qwen/qwen2.5-vl-32b-instruct:free"
