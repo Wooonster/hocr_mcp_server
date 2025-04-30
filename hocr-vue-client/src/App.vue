@@ -19,17 +19,16 @@
 
       <div class="results">
         <div class="extracted">
-          <h3>extracted latex code</h3>
+          <h3>VLM answer result</h3>
+          <pre>{{ result }}</pre>
+        </div>
+        <div class="extracted">
+          <h3>Extracted latex code</h3>
           <pre>{{ latex }}</pre>
         </div>
         <div class="rendered">
           <h3>Rendered LaTeX</h3>
           <div v-html="renderedHtml" class="math"></div>
-        </div>
-        <div class="rendered">
-          <h3>Eval Score</h3>
-          <!-- <div v-html="renderedHtml" class="math"></div> -->
-          <p>TODO...</p>
         </div>
       </div>
     </div>
@@ -78,6 +77,7 @@ export default {
 
       try {
         const resp = await axios.post('/upload', form);
+        this.result = resp.data.result || '';
         this.latex = resp.data.latex || '';
       } catch (err) {
         console.error(err);

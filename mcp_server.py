@@ -130,7 +130,7 @@ async def upload_image(
         else:
             latex_str = str(result)
         # return to the frontend
-        return {"latex": latex_str}
+        return { "result": result, "latex": latex_str }
     except Exception as e:
         logger.error("Error in extraction: %s", str(e))
         return {"error": "Extraction failed."}
