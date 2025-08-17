@@ -1,4 +1,5 @@
 # HOCR MCP Agent
+[![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/Wooonster/hocr_mcp_server)](https://archestra.ai/mcp-catalog/wooonster__hocr_mcp_server)
 
 ### Vue Frontend
 
