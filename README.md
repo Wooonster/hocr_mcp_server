@@ -27,3 +27,8 @@ Start command:
 ```bash
 uvicorn mcp_server:app --reload --host 0.0.0.0 --port 8000
 ````
+
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/wooonster-hocr-mcp-server).
+
